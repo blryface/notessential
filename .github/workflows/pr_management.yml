@@ -48,7 +48,7 @@ jobs:
           echo "PR I assigned reviewers to: ${{ steps.assign_reviewers.outputs.assigned_url }}"
           echo "Commit SHA: ${{ github.sha }}"
           echo "I assigned: ${{ steps.reviewer.outputs.assigned_reviewers }}"
-          echo "Additional info: ${{ steps.assign_reviewers.outputs.assigned_message }}"
+          echo "Additional info: ${{ steps.assign_reviewers.outputs.assigned_message }} \n"
 
           echo "PR I unassigned reviewers to: ${{ steps.assign_reviewers.outputs.unassigned_url }}"
           echo "Commit SHA: ${{ github.sha }}"
@@ -62,7 +62,7 @@ jobs:
 
           echo "PR I attempted to assign reviewers to: ${{ steps.assign_reviewers.outputs.assigned_url }}"
           echo "Commit SHA: ${{ github.sha }}"
-          echo "Info: ${{ steps.assign_reviewers.outputs.assigned_message }}"
+          echo "Info: ${{ steps.assign_reviewers.outputs.assigned_message }} \n"
 
           echo "PR I unassigned reviewers to: ${{ steps.assign_reviewers.outputs.unassigned_url }}"
           echo "Commit SHA: ${{ github.sha }}"
