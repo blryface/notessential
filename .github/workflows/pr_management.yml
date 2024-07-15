@@ -41,6 +41,7 @@ jobs:
 
       - name: Assigned/unassigned reviewers success debug log
         if: steps.assign-reviewers.outputs.assigned_status == 'success' && steps.assign-reviewers.outputs.unassigned_status == 'success'
+        id: success-debug
         run: |
           echo "Successfully assigned/unassigned reviewers! Printing more info below..."
           echo "If values return null, that means I didn't do anything.\n"
@@ -57,6 +58,7 @@ jobs:
 
       - name: Assigned/unassigned reviewers failure(?) debug log
         if: steps.assign-reviewers.outputs.assigned_status == 'info' && steps.assign-reviewers.outputs.unassigned_status == 'info'
+        id: info-debug
         run: |
           echo "Uh-oh! I (probably) ran into an issue when assigning/unassigning reviewers! Here's some info: \n"
 
@@ -79,7 +81,7 @@ jobs:
           echo "Merging ${{ github.base_ref }} <- ${{ github.head_ref }}"
           echo "Triggering event: ${{ github.event }}\n"
 
-          echo "Check previous step logs for more info."
+          echo "Check previous step logs, as well as the debug logs if necessary, for more info."
 
       - name: Warn if this workflow fails
         if: steps.author-assignee.outcome == 'failure' || steps.label-pr.outcome == 'failure' || steps.assign-reviewers.outcome == 'failure'
