@@ -8,3 +8,12 @@ You may find the website at https://notessential.blurry.gay/
 ## I want to help!
 
 Review our contributing guidelines at [CONTRIBUTING.md](./CONTRIBUTING.md)
+
+## Translation progress
+
+Only useful to maintainers and translators.
+<!-- CROWDIN-TRANSLATIONS-PROGRESS-ACTION-START -->
+
+
+
+<!-- CROWDIN-TRANSLATIONS-PROGRESS-ACTION-END -->

@@ -1,10 +1,10 @@
 import enUS from "./lang/en-US.json"
-import enLOL from "./lang/lol.json"
+import enLOL from "./lang/en-LOL.json"
 import enUD from "./lang/en-UD.json"
-import ruRU from "./lang/ru.json"
-import deDE from "./lang/de.json"
+import ruRU from "./lang/ru-RU.json"
+import deDE from "./lang/de-DE.json"
 import esES from "./lang/es-ES.json"
-import noNO from "./lang/no.json"
+import noNO from "./lang/no-NO.json"
 import ptBR from "./lang/pt-BR.json"
 
 export default defineI18nConfig(() => ({
@@ -15,8 +15,8 @@ export default defineI18nConfig(() => ({
     en: enUS,
     "en-UD": enUD,
     "en-LOL": enLOL,
-    ru: ruRU,
-    de: deDE,
+    "ru-RU": ruRU,
+    "de-DE": deDE,
     "es-ES": esES,
     "no-NO": noNO,
     "pt-BR": ptBR,
